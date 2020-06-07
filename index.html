@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>Walking to "Tequila" by Jax Jones</title>
+    </head>
+    <body>
+   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><div id="animation"></div>
+<audio id="myAudio" controls>
+  <source src="https://dl.dropbox.com/s/0ytol6fgzdlkizc/Tequila.mp3?dl=0" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br>
+
+<button onclick="enableAutoplay()" type="button">Enable autoplay</button>
+<button onclick="disableAutoplay()" type="button">Disable autoplay</button>
+<button onclick="checkAutoplay()" type="button">Check autoplay status</button>
+<script>
+    
+    var x = document.getElementById("myAudio");
+
+function enableAutoplay() { 
+  x.autoplay = true;
+  x.load();
+}
+ 
+function disableAutoplay() { 
+  x.autoplay = false;
+  x.load();
+} 
+  
+function checkAutoplay() { 
+  alert(x.autoplay);
+} 
+ </script>
+    
+    </body>
+</html>
